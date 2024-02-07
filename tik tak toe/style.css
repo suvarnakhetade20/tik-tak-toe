@@ -1,0 +1,75 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', 'sans-serif';
+
+}
+.wrapper{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-color:rgb(7, 7, 7) ;
+    background-size:cover;
+    display:grid;
+    place-items:center;
+    background-position:center;
+}
+.user-info{
+    color:white;
+    position:absolute;
+    top:3rem;
+    left:50%;
+    transform:translateX(-50%);
+    border:1px rgba(42, 87, 41, 0.25);
+    border-radius:1rem;
+    background-color: rgba(189, 209, 59, 0.15);
+    widht:35px;
+    padding: 0.5rem 3rem;
+}
+
+.btn{
+    color:white;
+    border:1px rgba(255, 255, 255, 0.25);
+    border-radius:1rem;
+    padding:1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    opacity:0;
+}
+.btn.active{
+    opacity:1;
+}
+.conatiner{
+    width:90%;
+    max-width:20rem;
+    border-radius:1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color:rgba(255, 255, 255, 0.15);
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+.box{
+    position:relative;
+    width:100%;
+    aspect-ratio:1/1;
+    cursor:pointer;
+    font-size:3rem;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box3,.box6{
+    border-bottom:2px solid white;
+}
+.box7,.box8{
+    border-right:2px solid white;
+}
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
